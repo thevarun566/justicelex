@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Justice Lex - Best Legal Experts for Civil & Criminal Cases in India. Specializing in NRI legal services with an ethical approach. Get expert legal assistance today!">
+    <meta name="keywords" content="legal services, NRI legal services, lawyers in Gurugram, civil cases, criminal cases, best advocates in India, legal consultation, ethical law firm, child custody, bail, family disputes, property disputes, arbitration, civil matter resolution, contract drafting, contract review, legal agreements">
+    <meta name="author" content="Justice Lex">
+    <title>Justice Lex - Expert Legal Solutions for NRIs & More</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        Justice Lex - Your Trusted Legal Partner for NRIs & More
+        <h3>Justice for All, Powered by Law.</h3>
+        <div class="language-switcher">
+            <label for="language">Language:</label>
+            <select id="language" onchange="translatePage()">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="fr">French</option>
+                <option value="es">Spanish</option>
+            </select>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#blog">Legal Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="#query">Get Consultation</a>
+        <a href="#faq">FAQs</a>
+        <a href="#case-tracking">Track Your Case</a>
+        <a href="#disclaimer">Disclaimer</a>
+        <a href="#privacy">Privacy Policy</a>
+    </nav>
+    
+    <div class="container">
+        <div class="section" id="about">
+            <h2>About Justice Lex</h2>
+            <p>Justice Lex is a team of expert advocates providing legal solutions for civil, criminal, property, business, and family law cases across India. We specialize in **NRI legal services**, ensuring an ethical and client-centric approach for resolving disputes, investments, and property matters in India.</p>
+        </div>
+        
+        <div class="section" id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li><strong>NRI Legal Assistance & Property Disputes</strong></li>
+                <li>Child Custody Cases</li>
+                <li>Bail & Criminal Defense</li>
+                <li>Family & Divorce Disputes</li>
+                <li>Property Disputes & Legal Documentation</li>
+                <li>Civil & Criminal Litigation</li>
+                <li>Corporate & Business Law</li>
+                <li>Employment & Labor Law</li>
+                <li>Consumer Protection Cases</li>
+                <li>Intellectual Property Rights (IPR)</li>
+                <li>Arbitration & Mediation</li>
+                <li>Contract Drafting & Review</li>
+                <li>Legal Agreements & Business Contracts</li>
+            </ul>
+        </div>
+        
+        <div class="section" id="case-tracking">
+            <h2>Track Your Case</h2>
+            <p>Enter your case ID to track the status of your case in real time.</p>
+            <form action="track-case.php" method="post">
+                <input type="text" name="case_id" placeholder="Enter Case ID" required>
+                <button type="submit">Track Now</button>
+            </form>
+        </div>
+        
+        <div class="section" id="blog">
+            <h2>Legal Blog</h2>
+            <p>Stay updated with the latest legal insights, case studies, and legal tips to protect your rights.</p>
+            <ul>
+                <li><a href="#">How NRIs Can Handle Property Disputes in India</a></li>
+                <li><a href="#">Understanding Child Custody Laws in India</a></li>
+                <li><a href="#">Bail Laws: Know Your Rights</a></li>
+                <li><a href="#">Civil vs. Criminal Cases: Key Differences</a></li>
+            </ul>
+        </div>
+        
+        <div class="section" id="appointment">
+            <h2>Book a Consultation</h2>
+            <p>Schedule an appointment with our legal experts for personalized legal advice.</p>
+            <button onclick="window.location.href='#contact'">Book Now</button>
+        </div>
+        
+        <div class="section" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <ul>
+                <li><strong>How can NRIs handle legal disputes in India?</strong> - We provide full legal assistance for property, family, and business disputes.</li>
+                <li><strong>What are the procedures for bail in India?</strong> - Our lawyers guide you through the entire bail process.</li>
+                <li><strong>How does arbitration work?</strong> - Arbitration is an alternative dispute resolution method, and we specialize in handling cases efficiently.</li>
+            </ul>
+        </div>
+        
+        <div class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> Main Maruti Kunj, Plot No-1, Gurugram</p>
+            <p><strong>Phone:</strong> <a href="tel:7532080066">7532080066</a></p>
+            <p><strong>Email:</strong> contact@justicelex.com</p>
+            <a href="https://wa.me/7532080066" class="whatsapp-button" target="_blank">Chat on WhatsApp</a>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2025 Justice Lex - The Best Law Firm for NRI Clients in India
+        <div class="dark-mode-toggle">
+            <label for="dark-mode">Dark Mode:</label>
+            <input type="checkbox" id="dark-mode" onclick="toggleDarkMode()">
+        </div>
+    </footer>
+    
+    <script>
+        function translatePage() {
+            let lang = document.getElementById("language").value;
+            window.location.href = `?lang=${lang}`;
+        }
+        
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
